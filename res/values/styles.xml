@@ -16,14 +16,13 @@
   -->
 <resources>
     <style name="DialtactsTheme"
-           parent="android:Theme.Material.Light">
+           parent="android:Theme.Material">
+        <item name="android:colorBackground">@*android:drawable/material_bg_blue_grey</item>
         <item name="android:textColorPrimary">@color/dialtacts_primary_text_color</item>
         <item name="android:textColorSecondary">@color/dialtacts_secondary_text_color</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="android:windowActionModeOverlay">true</item>
         <item name="android:actionBarStyle">@style/DialtactsActionBarStyle</item>
-        <!-- Style for the overflow button in the actionbar. -->
-        <item name="android:actionOverflowButtonStyle">@style/DialtactsActionBarOverflow</item>
         <!--  Drawable for the back button -->
         <item name="android:homeAsUpIndicator">@drawable/ic_back_arrow</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -79,25 +78,12 @@
         <item name="android:colorControlActivated">@color/dialer_theme_color</item>
     </style>
 
-    <!-- Action bar overflow menu icon. -->
-    <style name="DialtactsActionBarOverflow"
-           parent="@android:style/Widget.Material.Light.ActionButton.Overflow">
-        <item name="android:src">@drawable/ic_overflow_menu</item>
-    </style>
-
-    <!-- Action bar overflow menu icon.  White with no shadow. -->
-    <style name="DialtactsActionBarOverflowWhite"
-           parent="@android:style/Widget.Material.Light.ActionButton.Overflow">
-        <item name="android:src">@drawable/overflow_menu</item>
-    </style>
-
     <style name="DialpadTheme" parent="DialtactsTheme">
         <item name="android:textColorPrimary">#FFFFFF</item>
     </style>
 
     <style name="DialtactsThemeWithoutActionBarOverlay" parent="DialtactsTheme">
         <item name="android:windowActionBarOverlay">false</item>
-        <item name="android:actionOverflowButtonStyle">@style/DialtactsActionBarOverflowWhite</item>
     </style>
 
     <!-- Hide the actionbar title during the activity preview -->
@@ -110,15 +96,14 @@
     <style name="CallDetailActivityTheme" parent="DialtactsThemeWithoutActionBarOverlay">
         <item name="android:windowBackground">@color/background_dialer_results</item>
         <!-- CallLog -->
-        <item name="call_log_primary_background_color">#FFFFFF</item>
-        <item name="call_log_secondary_background_color">#FFFFFF</item>
-        <item name="call_log_header_color">#FFFFFF</item>
+        <item name="call_log_primary_background_color">@*android:color/material_blue_grey</item>
+        <item name="call_log_secondary_background_color">@*android:color/material_blue_grey</item>
+        <item name="call_log_header_color">@*android:color/material_blue_grey</item>
         <!-- VoicemailStatus -->
         <item name="call_log_voicemail_status_height">48dip</item>
         <item name="call_log_voicemail_status_background_color">#262626</item>
         <item name="call_log_voicemail_status_text_color">#888888</item>
         <item name="call_log_voicemail_status_action_text_color">#33b5e5</item>
-        <item name="android:actionOverflowButtonStyle">@style/DialtactsActionBarOverflowWhite</item>
     </style>
 
     <style name="DialtactsActionBarStyle" parent="android:Widget.Material.ActionBar">
@@ -148,13 +133,13 @@
 
     <!-- Text style for tabs. -->
     <style name="DialtactsActionBarTabTextStyle"
-           parent="android:style/Widget.Material.Light.ActionBar.TabText">
+           parent="android:style/Widget.Material.ActionBar.TabText">
         <item name="android:textColor">@color/tab_text_color</item>
         <item name="android:textSize">@dimen/tab_text_size</item>
         <item name="android:fontFamily">"sans-serif-medium"</item>
     </style>
 
-    <style name="ListViewStyle" parent="@android:style/Widget.Material.Light.ListView">
+    <style name="ListViewStyle" parent="@android:style/Widget.Material.ListView">
         <item name="android:overScrollMode">always</item>
     </style>
 
@@ -176,7 +161,11 @@
 
     <!-- Inherit from Theme.Material.Light.Dialog instead of Theme.Material.Light.Dialog.Alert
     since the Alert dialog is private. They are identical anyway. -->
-    <style name="AlertDialogTheme" parent="@android:style/Theme.Material.Light.Dialog">
+    <style name="AlertDialogTheme" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:colorBackground">@*android:drawable/material_bg_blue_grey</item>
+        <item name="android:windowBackground">@*android:drawable/dialog_background_material</item>
         <item name="android:colorAccent">@color/dialtacts_theme_color</item>
     </style>
 </resources>
+
+

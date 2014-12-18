@@ -16,9 +16,9 @@
 
 <resources>
     <!--  Primary text color in the Dialer -->
-    <color name="dialtacts_primary_text_color">#333333</color>
+    <color name="dialtacts_primary_text_color">#ffffff</color>
     <!-- Secondary text color in the Dialer -->
-    <color name="dialtacts_secondary_text_color">#737373</color>
+    <color name="dialtacts_secondary_text_color">#b3ffffff</color>
     <color name="dialer_red_highlight_color">#ff1744</color>
     <color name="dialer_green_highlight_color">#00c853</color>
 
@@ -26,8 +26,8 @@
     <color name="setting_primary_color">@color/dialtacts_primary_text_color</color>
     <!-- Color for the setting description text. -->
     <color name="setting_secondary_color">@color/dialtacts_secondary_text_color</color>
-    <color name="setting_background_color">#ffffff</color>
-    <color name="setting_button_color">#eee</color>
+    <color name="setting_background_color">@*android:color/material_blue_grey</color>
+    <color name="setting_button_color">#fff</color>
 
     <!-- Color of the text describing an unconsumed missed call. -->
     <color name="call_log_missed_call_highlight_color">@color/dialer_red_highlight_color</color>
@@ -36,7 +36,7 @@
     <color name="call_log_voicemail_highlight_color">#33b5e5</color>
 
     <!-- Tint of the recent card phone icon -->
-    <color name="recent_call_log_item_phone_icon_tint">#000000</color>
+    <color name="recent_call_log_item_phone_icon_tint">#ffffff</color>
     <color name="call_log_extras_text_color">#0277bd</color>
 
     <!--
@@ -52,19 +52,19 @@
     <color name="item_selected">#660099cc</color>
 
     <!-- White background for dialer -->
-    <color name="background_dialer_white">#ffffff</color>
+    <color name="background_dialer_white">@*android:color/material_blue_grey</color>
     <!-- Background color of new dialer activity -->
-    <color name="background_dialer_light">#fafafa</color>
+    <color name="background_dialer_light">@*android:color/material_blue_grey</color>
     <!-- Background color for search results and call details -->
-    <color name="background_dialer_results">#f9f9f9</color>
+    <color name="background_dialer_results">@*android:color/material_blue_grey</color>
     <!-- Background color of dialer list items (contacts, call log entries) -->
     <color name="background_dialer_list_items">@color/background_dialer_light</color>
     <color name="background_dialer_details_list_items">@color/background_dialer_results</color>
 
     <!-- Color of the 1dp divider that separates favorites -->
-    <color name="favorite_contacts_separator_color">#d0d0d0</color>
+    <color name="favorite_contacts_separator_color">#4dffffff</color>
 
-    <color name="searchbox_icon_tint">#a4a4a4</color>
+    <color name="searchbox_icon_tint">#ffffff</color>
 
     <!-- Color of the contact name in favorite tiles -->
     <color name="contact_tile_name_color">#ffffff</color>
@@ -72,11 +72,11 @@
     <color name="contact_list_name_text_color">@color/dialtacts_primary_text_color</color>
 
     <!-- Undo dialogue color -->
-    <color name="undo_dialogue_text_color">#4d4d4d</color>
+    <color name="undo_dialogue_text_color">#b3ffffff</color>
 
-    <color name="empty_list_text_color">#b2b2b2</color>
+    <color name="empty_list_text_color">#b3ffffff</color>
 
-    <color name="remove_text_color">#ffffff</color>
+    <color name="remove_text_color">#b3ffffff</color>
 
     <!-- Text color for the "Remove" text when a contact is dragged on top of the remove view -->
     <color name="remove_highlighted_text_color">#FF3F3B</color>
@@ -84,7 +84,7 @@
     <!-- Color of the bottom border below the contacts grid on the main dialer screen. -->
     <color name="contacts_grid_bottom_border_color">#16000000</color>
 
-    <color name="call_log_expanded_background_color">#ffffff</color>
+    <color name="call_log_expanded_background_color">@*android:color/material_blue_grey</color>
     <!-- Color of actions in expanded call log entries.  This text color represents actions such
          as call back, play voicemail, etc. -->
     <color name="call_log_action_text">@color/dialer_theme_color</color>
