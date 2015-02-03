@@ -19,7 +19,7 @@
     <style name="DialtactsTheme1" parent="@android:style/Theme.Material.Light">
         <item name="android:textColorPrimary">@color/dialtacts_primary_text_color</item>
         <item name="android:textColorSecondary">@color/dialtacts_secondary_text_color</item>
-        <item name="android:colorControlActivated">@color/dialer_theme_color</item>
+        <item name="android:colorControlActivated">@color/dialtacts_theme_color</item>
         <item name="android:colorPrimary">@color/dialer_theme_color</item>
         <item name="android:colorPrimaryDark">@color/dialer_theme_color_dark</item>
     </style>		
@@ -83,7 +83,7 @@
         <item name="android:colorPrimary">@color/dialer_theme_color</item>
         <item name="android:colorPrimaryDark">@color/dialer_theme_color_dark</item>
         <item name="dialpad_key_button_touch_tint">@color/dialer_dialpad_touch_tint</item>
-        <item name="android:colorControlActivated">@color/dialer_theme_color</item>
+        <item name="android:colorControlActivated">@color/dialtacts_theme_color</item>
     </style>
 
     <!-- Action bar overflow menu icon. -->
@@ -182,6 +182,7 @@
         <!-- Setting description. -->
         <item name="android:textColorSecondary">@color/setting_secondary_color</item>
         <item name="android:windowBackground">@color/setting_background_color</item>
+        <item name="android:colorControlActivated">@color/dialtacts_theme_color</item>
         <item name="android:colorAccent">@color/dialtacts_theme_color</item>
         <item name="android:textColorLink">@color/dialtacts_theme_color</item>
     </style>
